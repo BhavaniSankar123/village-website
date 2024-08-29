@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <title>Laveru_nys</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="E:\projects\laveru\home.css">
+    </head>
+    <body margin="0">
+            <img src="C:\Users\ADMIN.000\Downloads\netaji(nys).png" width="100px" height="100px" >
+            <p   class="h p">NETAJI YUVAJANA SANGAM</p>
+
+            <div class="header" >
+            <a href="home.html" class="h" >Home</a>
+            <a href="gallery.html" class="h">Gallery</a>
+            <a href="members.html" class="h" >Members</a>
+            <a href="about us.html" class="h" >About Us</a>
+            <a href="contact.html" class="h">Contact</a>
+            <input type="search" class="search-container" placeholder="Search..." class="h">
+        </div>
+            
+<div class="slideshow-container" id="y">
+
+  <div class="mySlides">
+    <img src="images\image1.png" style="width:100%;height:90%;">
+  </div>
+
+  <div class="mySlides">
+    <img src="images\image2.png" style="width:100%;height: 90%;">
+  </div>
+
+  <div class="mySlides">
+    <img src="images\image3.png" style="width:100%;height: 90%;">
+  </div>
+
+  <div class="mySlides">
+    <img src="images\image4.png" style="width:100%;height: 90%;">
+  </div>
+  <div style="text-align:center; margin-top:-60px" >
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+      
+  <script>
+    
+    var slideIndex = 0;
+    showSlides();
+  
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+  
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+  
+      slideIndex++;
+  
+      if (slideIndex > slides.length) {
+        slideIndex = 1;
+      }
+  
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+  
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+  
+      setTimeout(showSlides, 350); 
+    }
+  </script>
+    </body>
+</html>
